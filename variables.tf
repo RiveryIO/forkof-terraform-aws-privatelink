@@ -31,6 +31,13 @@ variable "private_dns_name" {
   type = string
 }
 
+variable "supported_regions" {
+  description = "Regions from which consumers may connect to the endpoint service (cross-region PrivateLink). Null keeps the service's own region only. Requires an AWS provider version that supports supported_regions."
+  default     = null
+
+  type = list(string)
+}
+
 variable "acceptance_required" {
   description = "Acceptance required on the privatelink access"
   default     = true

@@ -1,5 +1,11 @@
 All notable changes to this terraform will be documented in this file.
 
+## [Unreleased] (RiveryIO fork)
+
+### Features
+
+* Add `supported_regions` input, passed to `aws_vpc_endpoint_service`, to allow cross-region PrivateLink consumers (DO-3564).
+
 ## [1.1.2](https://github.com/BorisLabs/terraform-aws-privatelink/compare/v1.1.1...v1.1.2) (2023-05-04)
 
 

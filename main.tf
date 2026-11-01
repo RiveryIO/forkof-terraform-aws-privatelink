@@ -8,6 +8,7 @@ resource "aws_vpc_endpoint_service" "name" {
 
   private_dns_name           = var.private_dns_name
   supported_ip_address_types = var.supported_ip_address_types
+  supported_regions          = var.supported_regions
 }
 
 resource "aws_vpc_endpoint_service_allowed_principal" "name" {

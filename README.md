@@ -52,6 +52,7 @@ No modules.
 | <a name="input_service_name"></a> [service\_name](#input\_service\_name) | Name of the Endpoint service | `string` | `"default-name"` | no |
 | <a name="input_service_tags"></a> [service\_tags](#input\_service\_tags) | Map of tags for the service | `map(any)` | `{}` | no |
 | <a name="input_supported_ip_address_types"></a> [supported\_ip\_address\_types](#input\_supported\_ip\_address\_types) | List of Support IP Address Types | `list(string)` | <pre>[<br>  "ipv4"<br>]</pre> | no |
+| <a name="input_supported_regions"></a> [supported\_regions](#input\_supported\_regions) | Regions from which consumers may connect to the endpoint service (cross-region PrivateLink). Null keeps the service's own region only. | `list(string)` | `null` | no |
 
 ## Outputs
 
